@@ -2,8 +2,7 @@
   "name": "MLWobbleCompensation-CP2P2024",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": "..",
-    "image": "yourusername/ml-dev-container:latest"  // Specify your Docker image name and tag
+    "context": ".."
   },
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
@@ -13,5 +12,6 @@
   ],
   "forwardPorts": [8888],
   "postCreateCommand": "pip install -r requirements.txt",
+  "postStartCommand": "jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root",
   "remoteUser": "vscode"
 }
