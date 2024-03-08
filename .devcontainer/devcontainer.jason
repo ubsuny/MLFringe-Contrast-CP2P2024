@@ -1,17 +1,38 @@
 {
   "name": "MLWobbleCompensation-CP2P2024",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+  "environment": {
+    "pythonPath": "/path/to/your/python/executable"  // Specify full path
   },
   "extensions": [
     "ms-python.python"
   ],
-  "forwardPorts": [8888],
-  "postCreateCommand": "pip install -r requirements.txt",
-  "postStartCommand": "jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root",
+  "forwardPorts": [
+    {
+      "localPort": 8888,
+      "remotePort": 8888  // Assuming remote port matches local port
+    }
+  ],
+  "tasks": {
+    "installDependencies": {
+      "command": "pip install -r requirements.txt",
+      "group": {
+        "kind": "preStart",
+        "isDefault": true
+      }
+    },
+    "startJupyter": {
+      "command": "jupyter notebook --ip=0.0.0.0 --port=${localPort} --no-browser --allow-root",
+      "args": [
+        {
+          "name": "localPort",
+          "source": "forwardPorts[0].localPort"
+        }
+      ],
+      "group": {
+        "kind": "postStart",
+        "isDefault": true
+      }
+    }
+  },
   "remoteUser": "vscode"
 }
