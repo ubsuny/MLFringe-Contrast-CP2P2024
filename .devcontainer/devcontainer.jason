@@ -1,5 +1,5 @@
 {
-  "name": "MLWobbleCompensation-CP2P2024",
+  "name": "MLFringe-Contrast-CP2P2024",
   "environment": {
     "pythonPath": "/path/to/your/python/executable"  // Specify full path
   },
