@@ -18,7 +18,7 @@ The intensity equations in the paper [1], are reproduced, the detailes are avail
 <img width="761" alt="Screenshot 2024-03-27 at 5 20 19 PM" src="https://github.com/ubsuny/MLFringe-Contrast-CP2P2024/assets/13534352/79308403-59da-4877-aab8-cfae1d4207db">
 
 <img width="756" alt="Screenshot 2024-03-27 at 5 20 29 PM" src="https://github.com/ubsuny/MLFringe-Contrast-CP2P2024/assets/13534352/de3723fa-06a8-4330-8581-a00f04e64872">
-In the equation 12, $ \alpha $ is just taken to be $ \pi/2 $,
+In the equation 12, $\alpha$ is just taken to be $\pi/2$, L_1 is the distance between the neutron source.
 
 
 
