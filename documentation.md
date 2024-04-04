@@ -31,7 +31,12 @@ In the equation 12, $\alpha$ is just taken to be $\pi/2$, $L_1$ is the distance 
 As my project will be python base, I will be using, int., char., float, list and string, at least that is what I know so far. I will update it once there is anyhing new. <br>
 **Random numbers** <br>
 Well, I will be working on measuring the fring visibility/contrast, so I will be dealing with a lot of parameters, say, different diffraction grating, different grating periods, different neutron beams, different distances in the setup, different wavlengths, and so on. I am expecting different uncertinities in those parameters and that is why I would need random numbers in my project. 
-I have created an example code, which can calculate the random numbers for different parameters. Please note that this is just an example, and by the time I will need this, I can replace or add the actual parametrs etc. 
+I have created an example code, which can calculate the random numbers for different parameters. Please note that this is just an example, and by the time I will need this, I can replace or add the actual parametrs etc. <br>
+**Testing a code with using tensorflow** <br>
+A code which calculates the intensity profile for a single PGMI setup using cone beam is written in TensorFlow. As of now, I don't see any improvement, but perhaps that's because it's just a simple equation and doesn't involve machine learning. I am working on implementing the original model and hope to use it to improve my results
+
+
+
 
 ## References:
 [1] Sarenac, D., Gorbet, G., Kapahi, C., Clark, C. W., Cory, D. G., Ekinci, H., ... & Pushin, D. A. (2023). Cone beam neutron interferometry: from modeling to applications. arXiv preprint arXiv:2309.01787.
