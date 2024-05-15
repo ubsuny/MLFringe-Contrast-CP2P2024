@@ -34,7 +34,12 @@ Well, I will be working on measuring the fring visibility/contrast, so I will be
 I have created an example code, which can calculate the random numbers for different parameters. Please note that this is just an example, and by the time I will need this, I can replace or add the actual parametrs etc. <br>
 **Testing a code with using tensorflow** <br>
 A code which calculates the intensity profile for a single PGMI setup using cone beam is written in TensorFlow. As of now, I don't see any improvement, but perhaps that's because it's just a simple equation and doesn't involve machine learning. I am working on implementing the original model and hope to use it to improve my results
-
+# Tow ways to do it.
+Well, There are two ways to reproduce the required plots (The intensity plots), 
+## Direct way (Equations based)
+This way, you can see in the repository, I have posted some code examples for the intensity calculations from direct equations but which is not very smart way to do it, so I have to do the other way, from the actual model simulations. 
+## Simulating the actual model
+I have posted a code for k-space mimulation, which simulates the decribed model, but that code is not finalised, I am still making changes, and wil post the code (completed and corrected), once I am done with that. 
 
 
 
