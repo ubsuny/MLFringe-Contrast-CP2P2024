@@ -39,7 +39,8 @@ Well, There are two ways to reproduce the required plots (The intensity plots),
 ## Direct way (Equations based)
 This way, you can see in the repository, I have posted some code examples for the intensity calculations from direct equations but which is not very smart way to do it, so I have to do the other way, from the actual model simulations. 
 ## Simulating the actual model
-I have posted a code for k-space mimulation, which simulates the decribed model, but that code is not finalised, I am still making changes, and wil post the code (completed and corrected), once I am done with that. 
+I have posted a code for k-space mimulation, which simulates the decribed model. Looking at the code, with the name "simulating _k_space_model_updated" at the end, P5 gives an array of different rows, each row represents a first term as a transverse vector and the second term as an amplitude of that vector. Now in order to find intenssity we can do as, I = |F^-1{P5}|^2, we will take the inverse fft of the P5 and absolute square it which will give us intensity values. 
+Further more, We can calculate the contrast from P5, I will add the code for that letter when its done. 
 
 
 
